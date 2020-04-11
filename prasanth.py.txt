@@ -1,0 +1,190 @@
+from tkinter import *
+import time
+#==========================================
+a=Tk()
+a.geometry("10000x10000")
+a.title("Answer checker")
+a.configure(background="Grey6")
+#=========================================
+a00=Label(a,text="                                                                             QUIZADDA ??                                                                       ",font=("Calibri",24),fg="White",bg="Black")
+a00.grid(columnspan=4,ipadx=30)
+#=======================================================================
+ 
+a0=Label(a,text="Q1.)In which year India got independance ??",fg="White",bg="Black",font=("Times New Roman",14))
+a0.grid(row=1,column=0)
+a01=Entry(a,width=20,bg="White")
+a01.grid(row=1,column=1)
+a010=Label(a,text=" ",bg="Grey6")
+a010.grid(row=2,column=0)
+a0101=StringVar()
+
+a1=Label(a,text="Q2.)In which year India got Rebuplic ??",fg="White",bg="Black",font=("Times New Roman",14))
+a1.grid(row=3,column=0)
+a11=Entry(a,width=20,bg="White")
+a11.grid(row=3,column=1)
+a011=Label(a,text=" ",bg="Grey6")
+a011.grid(row=4,column=0)
+a0110=StringVar()
+
+a2=Label(a,text="Q3.)How much percentage of water is present on earth ??",fg="White",bg="Black",font=("Times New Roman",14))
+a2.grid(row=5,column=0)
+a21=Entry(a,width=20,bg="White")
+a21.grid(row=5,column=1)
+a012=Label(a,text=" ",bg="Grey6")
+a012.grid(row=6,column=0)
+a0120=StringVar()
+
+a3=Label(a,text="Q4.)In python3 which function is used to print something ??",fg="White",bg="Black",font=("Times New Roman",14))
+a3.grid(row=7,column=0)
+a31=Entry(a,width=20,bg="White")
+a31.grid(row=7,column=1)
+a013=Label(a,text=" ",bg="Grey6")
+a013.grid(row=8,column=0)
+a0130=StringVar()
+
+a4=Label(a,text="Q5.)What was the native place of Mahatma Gandhi ??",fg="White",bg="Black",font=("Times New Roman",14))
+a4.grid(row=9,column=0)
+a41=Entry(a,width=20,bg="White")
+a41.grid(row=9,column=1)
+a014=Label(a,text=" ",bg="Grey6")
+a014.grid(row=10,column=0)
+a0140=StringVar()
+
+a5=Label(a,text="Q6.)22%3 is eaqual to ??",fg="White",bg="Black",font=("Times New Roman",14))
+a5.grid(row=11,column=0)
+a51=Entry(a,width=20,bg="White")
+a51.grid(row=11,column=1)
+a015=Label(a,text=" ",bg="Grey6")
+a015.grid(row=12,column=0)
+a0150=StringVar()
+
+a6=Label(a,text="Q7.)Can we perform mathematical operations on a string(Yes/No) ??",fg="White",bg="Black",font=("Times New Roman",14))
+a6.grid(row=13,column=0)
+a61=Entry(a,width=20,bg="White")
+a61.grid(row=13,column=1)
+a016=Label(a,text=" ",bg="Grey6")
+a016.grid(row=14,column=0)
+a0160=StringVar()
+
+a7=Label(a,text="Q8.)25265-85*6 = ??",fg="White",bg="Black",font=("Times New Roman",14))
+a7.grid(row=15,column=0)
+a71=Entry(a,width=20,bg="White")
+a71.grid(row=15,column=1)
+a017=Label(a,text=" ",bg="Grey6")
+a017.grid(row=16,column=0)
+a0170=StringVar()
+
+a8=Label(a,text="Q9.)Amount is 200, Rate is 0.02 Time is 100 years .Simple Interest= ??",fg="White",bg="Black",font=("Times New Roman",14))
+a8.grid(row=17,column=0)
+a81=Entry(a,width=20,bg="White")
+a81.grid(row=17,column=1)
+a118=Label(a,text=" ",bg="Grey6")
+a118.grid(row=18,column=0)
+a0180=StringVar()
+
+a9=Label(a,text="Q10.)Which Python library is mostly used to make web pages ??",fg="White",bg="Black",font=("Times New Roman",14))
+a9.grid(row=19,column=0)
+a91=Entry(a,width=20,bg="White")
+a91.grid(row=19,column=1)
+a019=Label(a,text=" ",bg="Grey6")
+a019.grid(row=20,column=0)
+a0190=StringVar()
+
+#========================================================================================================
+def marks_calculation():
+    a0101=a01.get()
+    a0110=a11.get()
+    a0120=a21.get()
+    a0130=a31.get()
+    a0140=a41.get()
+    a0150=a51.get()
+    a0160=a61.get()
+    a0170=a71.get()
+    a0180=a81.get()
+    a0190=a91.get()
+    
+    
+    if(a0101=="1947"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=1,column=3)
+    elif(a0101==""):
+         Label(a,text="Unattempted!!! Answer is 1947",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=1,column=3)
+    else:
+         Label(a,text="Wrong!!! Correct Answer is 1947",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=1,column=3)
+    
+    
+    if(a0110=="1950"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=3,column=3)
+    elif(a0110==""):
+         Label(a,text="Unttempted!!! Answer is 1950",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=3,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is 1950",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=3,column=3)
+    
+    
+    if(a0120=="70%"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=5,column=3)
+    elif(a0120==""):
+         Label(a,text="Unattempted!!! Answer is 70%",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=5,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is 70%",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=5,column=3)
+    
+    
+    if(a0130=="print()"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=7,column=3)
+    elif(a0130==""):
+         Label(a,text="Unattempted!!! Answer is 1947",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=7,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is print()",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=7,column=3)
+    
+    
+    if(a0140=="South Africa"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=9,column=3)
+    elif(a0140==""):
+         Label(a,text="Unattempted!!! Answer is South Africa",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=9,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is South Africa",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=9,column=3)
+    
+    
+    if(a0150=="1"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=11,column=3)
+    elif(a0150==""):
+         Label(a,text="Unattempted!!! Answer is 1",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=11,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is 1",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=11,column=3)
+    
+    
+    if(a0160=="No"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=13,column=3)
+    elif(a0160==""):
+         Label(a,text="Unattempted!!! Answer is No",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=13,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is No",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=13,column=3)
+    
+    
+    if(a0170=="24755"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=15,column=3)
+    elif(a0170==""):
+         Label(a,text="Unattempted!!! Answer is 24755",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=15,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is 24755",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=15,column=3)
+    
+    
+    if(a0180=="1"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=17,column=3)
+    elif(a0180==""):
+         Label(a,text="Unattempted!!! Answer is 1",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=17,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is 1",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=17,column=3)
+    
+    
+    if(a0190=="tkinter"):
+        Label(a,text="Correct!!!",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=19,column=3)
+    elif(a0190==""):
+         Label(a,text="Unattempted!!! Answer is tkinter",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=19,column=3)
+    else:
+        Label(a,text="Wrong!!! Correct Answer is tkinter",fg="White",bg="Black",font=("Times New Roman",14)).grid(row=19,column=3)
+        
+        
+b0=Button(a,text="Marks Please!!",command=marks_calculation)
+b0.grid(row=21,column=1)
+#=====================================================================
+a.mainloop()
